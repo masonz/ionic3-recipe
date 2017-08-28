@@ -1,0 +1,83 @@
+page-home {
+ 
+  .main-content {
+    padding: 0 20px;
+    position: absolute;
+  }
+
+  .bar-buttons-md[end] {
+    margin: 0 6px;
+    min-width: 44px;
+    text-align: center;
+  }
+
+  .recipe__thumb {
+    height: 70vh;
+    width: 100%;
+    object-fit: fill;
+    display: block;
+    transition: transform .3s;
+  }
+
+  .recipe__btn-view {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, 0, 0);
+    transition: opacity .8s, transform .8s ease-in-out;
+  }
+
+  ion-slides {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    bottom: 0;
+  }
+  
+  ion-slide {
+    width: 60vw !important;
+    margin-left: 20vw;
+    margin-right: -20vw;
+  }
+
+  ion-slide:first-child {
+    margin-left: 0;
+  }
+
+  ion-slide:last-child {
+    margin-right: 0;
+  }
+
+  .swiper-slide {
+    filter: opacity(33%);
+  }
+
+  .swiper-slide-active {
+    filter: opacity(100%);
+  }
+
+  .swiper-slide-active .recipe__btn-view {
+    opacity: 1;
+    transform: translate3d(-50%, -50%, 0);
+  }
+
+  .chef__name,
+  .chef__desc {
+    letter-spacing: 1px;
+    margin: 0 0 1.75vh 0;
+  }
+
+  .chef__likes-label,
+  .chef__recipe-label {
+    display: block;
+  }
+
+  .chef__likes-count,
+  .chef__recipe-count {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.5;
+  }
+}

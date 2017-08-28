@@ -1,0 +1,39 @@
+<ion-header no-border>
+  <ion-navbar text-center>
+    <ion-buttons start left>
+      <button ion-button icon-only menuToggle color="light-grey"> 
+        <ion-icon name="menu"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title ion-text>Home</ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="light-grey" (click)="goToSearch()"> 
+        <ion-icon name="search"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+  <div text-center [@chefAnim]='state'>
+    <h2 class="chef__name" ion-text color="primary">{{ chef.name }}</h2>
+    <p class="chef__desc">{{ chef.desc }}</p>
+    <div inline-block padding-right>
+      <span class="chef__recipe-count">{{ chef.recipeCount }}</span>
+      <span class="chef__recipe-label" ion-text text-uppercase color="light-grey">Recipe</span>
+    </div>
+    <div inline-block padding-left>
+      <span class="chef__likes-count">{{ chef.liked }}</span>
+      <span class="chef__likes-label" ion-text text-uppercase color="light-grey">Likes</span>
+    </div>
+  </div>
+
+  <ion-slides [slidesPerView]="'auto'" loop [speed]="500" (ionSlideDidChange)="slideDidChange()" (ionSlideWillChange)="slideWillChange()">
+    <ion-slide *ngFor="let c of chefs">
+      <img class="recipe__thumb" [src]="c.thumb" />
+      <button class="recipe__btn-view" ion-button round (tap)="goToViewChef(c)">View</button>
+    </ion-slide>
+  </ion-slides>
+
+</ion-content>

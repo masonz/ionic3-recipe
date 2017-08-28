@@ -1,0 +1,47 @@
+page-menu {
+
+  .menu {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6), 
+      rgba(0, 0, 0, 0.6)
+    ), url('https://user-images.githubusercontent.com/10757519/29750007-3ab45212-8b6a-11e7-8c18-6e9d4542c2fe.jpg');
+    background-size: cover;
+
+    .scroll-content {
+      padding: 13vh 12vw 6vh 12vw;
+    }
+  }
+
+  .menu__avatar {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    margin: 4vh 0;
+  }
+
+  .menu__item {
+    background: transparent;
+    color: #9197a1;
+    padding-left: 0;
+    font-weight: 600;
+    min-height: 0px;
+
+    &.activated {
+      background: none;
+      color: white;
+    }
+
+    .label-md {
+      margin: 12px 0;
+    }
+  }
+
+  .menu__label {
+    font-size: 14px;
+  }
+
+  .menu-under {
+    position: absolute;
+    bottom: 1em;
+  }
+}

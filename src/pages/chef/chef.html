@@ -1,0 +1,75 @@
+<!--
+  Generated template for the ChefPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+<ion-header #headerArea>
+  <!-- ion-navbar start -->
+  <ion-navbar transparent hideBackButton>
+    <ion-buttons left padding-left>
+      <button ion-button icon-only color="light-grey" (click)="goBack()"> 
+        <ion-icon name="arrow-round-back"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title text-center>{{ chef.name }}</ion-title>
+    <p class="toolbar-info" ion-text text-center color="white">{{ chef.desc }}</p>
+    <ion-buttons end padding-right>
+      <button ion-button icon-only color="light-grey"> 
+        <ion-icon name="add-circle"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+  <!-- ion-navbar end -->
+  <!-- shrinking-header start -->
+  <shrinking-header [scrollArea]="scrollArea" [headerArea]="headerArea">
+    <img class="chef__avatar" [src]="chef.avatar" alt="avatar">
+    <button class="chef__follow" ion-button round>Follow</button>
+    <p class="chef__follow-count" ion-text color="light-grey">11,623 Followers</p>
+  </shrinking-header>
+  <!-- shrinking-header end -->
+  <!-- segment start -->
+  <ion-toolbar class="chef-segment">
+    <ion-segment [(ngModel)]="section" color="primary" (ionChange)="segmentChanged($event)">
+      <ion-segment-button value="info" text-capitalize>
+        Chef Info
+      </ion-segment-button>
+      <ion-segment-button value="recipes" text-capitalize>
+        42 Recipes
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+  <!-- segment end -->
+</ion-header>
+
+<ion-content fullscreen #scrollArea>
+
+  <div [ngSwitch]="section">
+    <!-- chef info start -->
+    <div *ngSwitchCase="'info'">
+      <h4 class="info__title">ABOUT</h4>
+      <p class="info__paragraph" ion-text color="palm-leaf">After attending culinary school. Malone got an internship at La Belle Vie under chef Tim McKee. She has continued to
+        work With McKee at Barrio. Porter & Frye since 2009, at Sea Change
+      </p>
+      <h4 class="info__title">SPECIALTY</h4>
+      <p class="info__paragraph" ion-text color="palm-leaf">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+        dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+        book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially
+        unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and
+        more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+    <!-- chef info end -->
+    <!-- recipes start -->
+    <div *ngSwitchCase="'recipes'">
+      <ion-row>
+        <ion-col col-6 *ngFor="let recipe of recipes" (click)="viewReicpe()">
+          <img class="recipe__thumb" [src]="recipe.thumb">
+          <p class="recipe__name" text-center>{{ recipe.name }}</p>
+        </ion-col>
+      </ion-row>
+    </div>
+    <!-- recipes end -->
+  </div>
+
+</ion-content>

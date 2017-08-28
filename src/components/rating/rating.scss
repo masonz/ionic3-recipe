@@ -1,0 +1,17 @@
+rating {
+
+  display: inline-block;
+  
+  .rating {
+    margin: 0;
+    padding: 0;
+  }
+
+  .rating__icon {
+    display: inline;
+    border: 0px;
+    background: none;
+    letter-spacing: 2px;
+    vertical-align: middle;
+  }
+}

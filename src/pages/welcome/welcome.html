@@ -1,0 +1,22 @@
+<!--
+  Generated template for the WelcomePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-slides pager (ionSlideDidChange)="slideChanged()">
+
+  <ion-slide *ngFor="let slide of slideData">
+    <ion-content [class]="slide.class">
+      <ion-toolbar>
+        <ion-buttons end>
+          <button ion-button color="white" (click)="goToHome()">Skip</button>
+        </ion-buttons>
+      </ion-toolbar>
+      <svg [id]="slide.svgId" version="1.1" xmlns="http://www.w3.org/2000/svg" width="200px" height="200px"></svg>
+      <h1 ion-text color="white">{{ slide.title }}</h1>
+      <p padding ion-text color="white">{{ slide.desc }}</p>
+    </ion-content>
+  </ion-slide>
+
+</ion-slides>

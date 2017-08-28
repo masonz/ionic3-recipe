@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="orange-juice" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<circle style="fill:#AB3CCC;" cx="256" cy="256" r="256"/>
+<path class="shadow" style="fill:#802897;" d="M508.868,296.085L353.801,141.017H254l-44.544-44.303C197.03,82.351,178.683,73.25,158.199,73.25
+	c-37.427,0-67.768,30.341-67.768,67.768c0,20.484,9.101,38.831,23.465,51.257l44.303,44.544v170.59
+	c0,15.348,7.095,29.118,18.165,38.198l66.033,66.033c4.505,0.236,9.039,0.36,13.603,0.36
+	C383.747,512,489.628,418.427,508.868,296.085z"/>
+<circle class="orange__out" style="fill:#FFE047;" cx="158.2" cy="141.02" r="67.768"/>
+<path class="orange__out--right" style="fill:#FFCF00;" d="M225.97,141.02c0,37.42-30.34,67.76-67.77,67.76V73.25C195.63,73.25,225.97,103.59,225.97,141.02z"/>
+<circle class="orange__inner" style="fill:#FF8900;" cx="158.2" cy="141.02" r="52.02"/>
+<path class="orange__inner--right" style="fill:#E67500;" d="M210.22,141.02c0,28.73-23.29,52.01-52.02,52.01V89C186.93,89,210.22,112.29,210.22,141.02z"/>
+<path class="orange__glass" style="fill:#FFFFFF;" d="M304.392,456.817h-96.785c-27.175,0-49.408-22.234-49.408-49.408V141.017h195.602v266.391
+	C353.801,434.583,331.567,456.817,304.392,456.817z"/>
+<path class="orange__glass--right" style="fill:#E1E1E3;" d="M353.8,141.02v266.39c0,27.17-22.23,49.41-49.41,49.41H256v-315.8L353.8,141.02L353.8,141.02z"/>
+<path class="juice" d="M299.992,435.019h-87.984c-17.421,0-31.675-14.254-31.675-31.675V216.876h151.334v186.468C331.667,420.765,317.413,435.019,299.992,435.019z" fill="#FF8900"/>
+<path class="juice--right" d="M331.67,216.88v186.46c0,17.42-14.26,31.68-31.68,31.68H256V216.88H331.67z" fill="#E67500"/>
+</svg>

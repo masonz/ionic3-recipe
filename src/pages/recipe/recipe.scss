@@ -1,0 +1,40 @@
+page-recipe {
+
+  .container {
+    padding: 16px 12.5vw;
+  }
+
+  .ingredient__thumb {
+    width: 39.5vh;
+    object-fit: cover;
+  }
+
+  .ingredient__title,
+  .ingredient__item {
+    padding: 0 12.5vw;
+  }
+
+  .ingredient-title {
+    font-weight: bold;
+  }
+
+  .ingredient__item {
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  .step__label {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+  }
+
+  .step {
+    min-height: 9.5vh;
+
+    & > .toolbar-background {
+      background-color: white;
+    }
+  }
+}

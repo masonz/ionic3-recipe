@@ -1,0 +1,42 @@
+.ios, .md {
+ 
+  page-welcome {
+
+    .slide-zoom {
+      height: 100%;
+    }
+
+    .toolbar-background {
+      background: transparent;
+      border-color: transparent;
+    }
+ 
+    .slide-one {
+      background-color: #ffe047;
+    }
+
+    .slide-two {
+      background-color: #ab3ccc;
+    }
+
+    .slide-three {
+      background-color: #00bb64;
+    }
+
+    .slide-four {
+      background-color: #00e7f1;
+    }
+ 
+    ion-slide svg {
+      height: 35vh ;
+      width: 50vw;
+      margin-top: 10vh;
+    }
+
+    .swiper-pagination-bullet-active {
+      background: white;
+    }
+ 
+  }
+ 
+}

@@ -1,0 +1,79 @@
+page-chef {
+
+  .toolbar-title-md {
+    color: white !important;
+  }
+
+  .header-md::after {
+    content: none;
+  }
+
+  .toolbar-md {
+    padding: 3.5vh 4px;
+  }
+
+  .toolbar-info {
+    letter-spacing: 1px;
+  }
+
+  .scroll-content,
+  .chef-segment {
+    padding: 0 10.7vw;
+  }
+
+  .button-inner {
+    color: white;
+  }
+
+  .segment-md .segment-button {
+    padding: 3.6vh 0;
+    height: auto;
+    line-height: 1;
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+
+  .segment-button.segment-activated {
+    font-weight: bold;
+  }
+
+  .chef__avatar {
+    width: 30vw;
+    height: 30vw;
+    display: block;
+    border-radius: 50%;
+    margin: 2vh auto 0 auto;
+  }
+
+  .chef__follow {
+    margin-top: 3.6vh;
+  }
+
+  // chef-info section style 
+  // ==============================
+
+  .info__title {
+    letter-spacing: 1px;
+    font-weight: bold;
+  }
+
+  .info__paragraph {
+    margin: 0;
+    line-height: 2;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: lighter;
+  }
+
+  // .chef__follow-count {
+  //   letter-spacing: 1px;
+  //   margin-bottom: 6.5vh;
+  // }
+
+  // chef-recipes section style 
+  // ==============================
+  .recipe__name {
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+}

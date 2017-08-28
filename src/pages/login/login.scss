@@ -1,0 +1,47 @@
+page-login {
+  ion-content {
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ), url('https://user-images.githubusercontent.com/10757519/29750007-3ab45212-8b6a-11e7-8c18-6e9d4542c2fe.jpg');
+  }
+
+  ion-footer {
+    border-top: 0.5px solid lightgray;
+  }
+
+  .scroll-content {
+    padding: 0 9.25vw;
+  }
+
+  .app-name {
+    margin-top: 10vh;
+    font-size: 32px;
+    padding: 18px 0;
+  }
+
+  .app-desc {
+    line-height: 1.8;
+    letter-spacing: 2px;
+  }
+
+  .login-title {
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 3vh 0;
+  }
+
+  .login__input {
+    background: white;
+    border-radius: 20.5px;
+    margin-bottom: 20px;
+
+    .text-input {
+      padding-left: 1.75em;
+    }
+  }
+
+  .login-footer {
+    letter-spacing: 1px;
+  }
+}

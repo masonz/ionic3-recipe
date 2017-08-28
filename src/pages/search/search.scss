@@ -1,0 +1,64 @@
+page-search {
+
+  .toolbar-title {
+    position: relative;
+  }
+
+  .toolbar-ios ion-title {
+    padding: 0 0 0 4em;
+  }
+
+  .search-header {
+    padding: 1.5vw 10vw 0 10vw;
+    background-color: #f7f7f7;
+  }
+
+  .search__input {
+    width: 70vw;
+    border-left: none;
+    border-radius: 20px;
+    background-color: white;
+    padding-left: 20px;
+    height: 8.5vw;
+
+    & .text-input {
+      letter-spacing: 1px;
+      margin: 2vw;
+      font-size: 0.8em;
+    }
+  }
+
+  .search__button {
+    position: absolute;
+    right: 1em;
+    top: 0;
+    height: 8.5vw;
+    margin: 0;
+    letter-spacing: 1px;
+    border-bottom-right-radius: 22.5px;
+    border-top-right-radius: 22.5px;
+    box-shadow: none;
+  }
+
+  // result style
+  // ========================
+  .result__thumb {
+    width: 20vw;
+    margin-right: 6vw;
+  }
+
+  .result-info {
+    letter-spacing: 2px;
+  }
+
+  .result__name,
+  .result__chef {
+    margin: 0;
+  }
+
+  .result__name {
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-bottom: 0.75em;
+  }
+}

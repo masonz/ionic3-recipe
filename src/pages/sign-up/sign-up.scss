@@ -1,0 +1,39 @@
+page-sign-up {
+  ion-footer {
+    border-top: 0.5px solid lightgray;
+  }
+
+  .scroll-content {
+    padding: 0 9.25%;
+  }
+
+  .app-desc {
+    width: 90%;
+    margin: 10vh auto 0 auto;
+    line-height: 1.8;
+    letter-spacing: 1px;
+  }
+
+  .signup-title {
+    font-weight: 600;
+    padding: 3vh 0;
+  }
+
+  .signup__input {
+    background: #f7f7f7;
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    .text-input {
+      padding-left: 1.75em;
+    }
+  }
+
+  .sub-text {
+    padding-left: 8px;
+  }
+
+  .signup-footer {
+    letter-spacing: 1px;
+  }
+}

@@ -1,0 +1,29 @@
+<!--
+  Generated template for the SignUpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-content fullsrceen color="white" text-center bg-white>
+
+  <p class="app-desc" ion-text color="palm-leaf">Get inspired bu thousand recipes from home chef to iron chef </p>
+  <p class="signup-title" ion-text color="palm-leaf">Sign up a new account</p>
+  <ion-input class="signup__input" type="text" value="" placeholder="Full Name"></ion-input>
+  <ion-input class="signup__input" type="text" value="" placeholder="Email Address"></ion-input>
+  <ion-input class="signup__input" type="password" value="" placeholder="Password"></ion-input>
+  <div text-left text-vertical-align padding-left padding-vertical>
+    <ion-checkbox [(ngModel)]="subsrcible"></ion-checkbox>
+    <span class="sub-text" ion-text color="palm-leaf">Subsrcible newsletter</span>
+  </div>
+  <button ion-button text-uppercase full round>Get started</button>
+
+</ion-content>
+
+<ion-footer text-center>
+  <ion-toolbar transparent>
+    <p class="signup-footer" color="palm-leaf" ion-text>
+      Have an account ?
+      <span color="primary" ion-text (click)="goToLogin()">Sign in</span>
+    </p>
+  </ion-toolbar>
+</ion-footer>
