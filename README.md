@@ -1,5 +1,5 @@
 # ionic3-recipe
-a ionic(3.x) simple with recipe theme. The `ios plateform` is not tested.
+a ionic(3.x) sample with recipe theme. The `ios plateform` is not tested.
 
 ⚠️this demo use animations by angular 4.2.x, but Ionic is not ready for Angular 4.2 yet, so run `build --prod` will failed.⚠️
 
